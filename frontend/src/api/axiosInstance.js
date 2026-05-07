@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: '/', // Vite proxy will forward to backend
+  baseURL: import.meta.env.VITE_API_URL || '/', // Vite proxy for local dev, direct URL for prod
 });
 
 // Add request interceptor to attach JWT token if present
