@@ -1,0 +1,97 @@
+/* LandingPage.css */
+
+/* Global smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+.landing {
+  background: linear-gradient(135deg, hsl(210, 70%, 95%), hsl(260, 70%, 90%));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 4rem;
+}
+.hero h1 {
+  font-size: 4rem;
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1.2s ease-in-out;
+}
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #444;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+}
+.cta-buttons .btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cta-buttons .primary {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  color: #fff;
+}
+.cta-buttons .primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 0, 150, 0.3);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+.feature-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+.feature-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero h1 { font-size: 3rem; }
+}

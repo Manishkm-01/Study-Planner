@@ -1,0 +1,54 @@
+.leaderboard-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.leaderboard-form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.leaderboard-form input {
+  max-width: 300px;
+  margin-bottom: 0;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.leaderboard-table th {
+  background: rgba(99, 102, 241, 0.2);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.leaderboard-table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.error-msg, .no-data-msg {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.no-data-msg {
+  color: #e2e8f0;
+  opacity: 0.8;
+}

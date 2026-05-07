@@ -1,0 +1,111 @@
+.quiz-generator {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.quiz-content {
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.question-card {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.question-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+}
+
+.options-list li {
+  margin-bottom: 0.8rem;
+}
+
+.options-list label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-align: left;
+  line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+.options-list label:hover {
+  background: rgba(99, 102, 241, 0.15);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.options-list label input[type="radio"] {
+  margin: 0;
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: var(--primary-color);
+}
+
+.option-text {
+  flex: 1;
+}
+
+.options-list label input[type="radio"]:disabled {
+  cursor: not-allowed;
+}
+
+.correct-answer {
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: rgba(16, 185, 129, 0.5) !important;
+}
+
+.incorrect-answer {
+  background: rgba(239, 68, 68, 0.2) !important;
+  border-color: rgba(239, 68, 68, 0.5) !important;
+}
+
+.explanation-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.score-result {
+  margin-top: 2rem;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.score-result h3 {
+  color: #10b981;
+  font-size: 2rem;
+}
