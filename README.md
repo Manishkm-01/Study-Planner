@@ -2,8 +2,6 @@
 
 An intelligent, full-stack web application designed to revolutionize the way students organize their learning. Powered by **Google Gemini AI**, this platform generates personalized study schedules and interactive quizzes to help you master any topic.
 
-![Project Preview](https://via.placeholder.com/800x400?text=AI+Study+Planner+Preview)
-
 ## Features
 
 - **AI Schedule Generator**: Get a custom-tailored study plan based on your subject and specific topic.
@@ -15,7 +13,7 @@ An intelligent, full-stack web application designed to revolutionize the way stu
 - **Secure Auth**: Robust authentication using JWT and Google OAuth2.
 - **Premium UI**: Modern, responsive Glassmorphism design for a superior user experience.
 
-##Tech Stack
+## Tech Stack
 
 ### Backend
 - **Framework**: Spring Boot 3.x
@@ -44,7 +42,7 @@ An intelligent, full-stack web application designed to revolutionize the way stu
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/study-planner.git
+   git clone https://github.com/Manishkm-01/Study-Planner.git
    cd study-planner
    ```
 
